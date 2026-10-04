@@ -1,0 +1,26 @@
+{
+  "name": "Orbit",
+  "sprites": {
+    "pane": {
+      "file": "art/pane.png"
+    },
+    "terminal": {
+      "file": "art/terminal.png",
+      "pixels": "tall"
+    }
+  },
+  "captions": {
+    "idle": "Drifting",
+    "think": "Spinning up…",
+    "read": "Scanning {detail}…",
+    "read.search": "Searching {detail}…",
+    "read.web": "Scanning the web…",
+    "write": "Writing {detail}…",
+    "run": "Running {detail}…",
+    "run.test": "Checking tests…",
+    "happy": "Done",
+    "sad": "Hit a snag",
+    "sleep": "Resting",
+    "waiting": "Waiting on you…"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Bonsai",
+  "sprites": {
+    "pane": {
+      "file": "art/pane.png"
+    },
+    "terminal": {
+      "file": "art/terminal.png",
+      "pixels": "tall"
+    }
+  },
+  "captions": {
+    "idle": "Hanging out",
+    "think": "Thinking…",
+    "read": "Reading {detail}…",
+    "read.search": "Searching {detail}…",
+    "read.web": "Browsing…",
+    "write": "Writing {detail}…",
+    "run": "Running {detail}…",
+    "run.test": "Running tests…",
+    "happy": "Done!",
+    "sad": "Hit a snag",
+    "sleep": "Asleep",
+    "waiting": "Waiting on you…"
+  }
+}

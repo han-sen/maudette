@@ -1,0 +1,18 @@
+Maudette (character and artwork)
+Copyright (c) 2026 Michael Hansen
+
+Licensed under the Creative Commons Attribution-NonCommercial 4.0
+International License (CC BY-NC 4.0):
+https://creativecommons.org/licenses/by-nc/4.0/
+
+You may share and adapt this artwork for non-commercial purposes, as long as
+you give appropriate credit (Michael Hansen, https://github.com/han-sen),
+provide a link to the license, and indicate if changes were made. Commercial
+use requires permission.
+
+This covers the Maudette character, her sprites and Aseprite files, and data
+generated from them.
+
+In this repository: the files in mascots/maudette/, and data generated from
+them (maudette.mascot.json, and mod/hooks/sprites.ts when she is bundled).
+The code that draws and animates her is MIT licensed: see LICENSE at the root.

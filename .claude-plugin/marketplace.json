@@ -1,0 +1,31 @@
+{
+  "name": "maudette",
+  "owner": {
+    "name": "Michael Hansen",
+    "url": "https://github.com/han-sen"
+  },
+  "metadata": {
+    "description": "Maudette, a pixel mascot that reacts to what Claude is doing"
+  },
+  "plugins": [
+    {
+      "name": "maudette",
+      "source": "./mod",
+      "description": "A pixel mascot that reacts to what Claude is doing",
+      "author": {
+        "name": "Michael Hansen",
+        "url": "https://github.com/han-sen"
+      },
+      "homepage": "https://github.com/han-sen/maudette",
+      "repository": "https://github.com/han-sen/maudette",
+      "license": "MIT AND CC-BY-NC-4.0",
+      "category": "fun",
+      "keywords": [
+        "mascot",
+        "pixel-art",
+        "status",
+        "mod"
+      ]
+    }
+  ]
+}

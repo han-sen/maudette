@@ -1,0 +1,21 @@
+{
+  "name": "maudette",
+  "version": "1.0.0",
+  "description": "A pixel mascot that reacts to what Claude is doing",
+  "author": {
+    "name": "Michael Hansen",
+    "url": "https://github.com/han-sen"
+  },
+  "homepage": "https://github.com/han-sen/maudette",
+  "repository": "https://github.com/han-sen/maudette",
+  "license": "MIT AND CC-BY-NC-4.0",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "mascot": {
+      "type": "string",
+      "title": "Mascot",
+      "description": "Which mascot to show: an example that ships with the plugin (\"bonsai\", \"nimbus\", \"orbit\"), or the name of a .mascot.json file in ~/.claude/mascots (\"pip\" for pip.mascot.json). Empty shows Maudette.",
+      "default": ""
+    }
+  }
+}
