@@ -1,4 +1,6 @@
 import { expect, test } from 'claude-code/testing'
+import type { Engine } from 'claude-code/testing'
+import type { On } from 'claude-code'
 
 import { bundled, parseMascot } from '../hooks/mascot'
 
@@ -61,4 +63,22 @@ test('a mascot that cannot be loaded leaves the bundled mascot', { options: { ma
   })
   expect(await ui.find({ type: 'Svg' })).toBeDefined()
   await ui.unmount()
+})
+
+// Toasts that session.start shows for the `mascot` setting.
+async function startToasts($: Engine, on: On): Promise<string[]> {
+  const toasts: string[] = []
+  on('ui.toast', async (_$, e) => void toasts.push(e.text))
+  on('env.get', async () => ({ value: '/nowhere' }) as never)
+  on('session.start', async (_$, e) => ({ cwd: e.cwd }))
+  await $.session.start({ cwd: '/', surface: 'desktop', interactive: true } as never)
+  return toasts
+}
+
+test('a mascot that cannot be loaded says so in a toast', { options: { mascot: 'nowhere' } }, async ($, on) => {
+  expect(await startToasts($, on)).toEqual([expect.stringContaining('no mascot "nowhere"')])
+})
+
+test('naming the bundled mascot shows it without a toast', { options: { mascot: 'Maudette' } }, async ($, on) => {
+  expect(await startToasts($, on)).toEqual([])
 })

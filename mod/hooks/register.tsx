@@ -110,6 +110,8 @@ async function loadMascot($: EngineInterface, name: string) {
     } catch {}
   }
   if (json === undefined) {
+    // Naming the bundled mascot just asks for it; no file needed, nothing to say.
+    if (name.toLowerCase() === bundled.text.name.toLowerCase()) return
     $.ui.toast(`Maudette: no mascot "${name}" in ~/.claude/mascots or the plugin, ${fallback}`)
     return
   }
