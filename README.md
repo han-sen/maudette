@@ -28,13 +28,13 @@ Start a new session and they appear above the prompt. Type `/maudette` to open a
 | Happy    | A turn finishes                                   |
 | Sad      | Something fails                                   |
 | Waiting  | Claude asks you a question, until you answer      |
-| Asleep   | 5 minutes of quiet; start typing and they wake up |
+| Asleep   | 5 minutes of quiet, start typing and they wake up |
 
 Beside them, a short caption says what's happening: "Reading draw.ts…", "Running npm…", "Done!".
 
 ## Other mascots
 
-I asked Claude to design and generate a few mascots from scratch after making the first:
+After designing Maudette, I asked Claude to design and generate a few other mascots from scratch:
 
 - **Orbit**: a core and its satellites, every mood told by motion alone.
 - **Nimbus**: a tiny sky whose weather follows the work, from sunshine to a thunderstorm to a night full of stars.
